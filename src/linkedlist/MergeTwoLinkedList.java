@@ -11,7 +11,9 @@ public class MergeTwoLinkedList {
 			this.next=null;
 		}
 	}
-	Node sortedMerge(Node headA, Node headB) {
+	static Node headA=null;
+	static Node headB=null;
+	Node sortedMerge() {
 		    Node apo=headA; 
 		    Node bpo=headB;
 		    Node headC=null;
@@ -49,5 +51,60 @@ public class MergeTwoLinkedList {
 		        temp=temp.next;
 		    }
 		    return headC;
-		   } 
+		   }
+	
+	 public static Node addToTheLast(Node head,Node node)  
+	 { 
+	     if (head == null) 
+	     { 
+	         head = node; 
+	         
+	     } 
+	     else 
+	     { 
+	         Node temp = head; 
+	         while (temp.next != null) 
+	             temp = temp.next; 
+	         temp.next = node; 
+	     }
+	     return head;
+	 } 
+	 public static void printbyhead(Node dim) {
+			Node cur = dim;
+			System.out.print("LinkedList is-----> ");
+			while (cur.next != null) {
+				System.out.print(cur.data + "->");
+				cur = cur.next;
+			}
+			System.out.println(cur.data);
+		}
+	// Driver Code 
+	public static void main(String args[]) 
+	{ 
+	    /* Let us create two sorted linked 
+	       lists to test the methods  
+	       Created lists: 
+	           llist1: 5->10->15, 
+	           llist2: 2->3->20 
+	    */
+ 
+	      Node headc;
+	    // Node head1 = new Node(5); 
+	      headA=addToTheLast(headA,new Node(5)); 
+	      headA=addToTheLast(headA,new Node(10)); 
+	      headA= addToTheLast(headA,new Node(15)); 
+	      
+	    // Node head2 = new Node(2); 
+	      headB=addToTheLast(headB,new Node(2)); 
+	      headB=addToTheLast(headB,new Node(3)); 
+	      headB=addToTheLast(headB,new Node(20)); 
+	      System.out.println("Given list are ");
+	      
+	      printbyhead(headA);
+	      printbyhead(headB);
+	      System.out.println("After merge");
+	     headc = new MergeTwoLinkedList().sortedMerge(); 
+	     printbyhead(headc);      
+	      
+}
 }

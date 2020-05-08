@@ -65,7 +65,7 @@ public class NtheFromLast {
 			}
 			System.out.println("count:"+count+" fast data is "+fast.data+ " slow data "+slow.data);
 		}
-		if(count!=n)
+		if(count<n)
 			return -1;
 		else
 		return slow.data;

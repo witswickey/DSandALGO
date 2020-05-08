@@ -50,7 +50,6 @@ public class LRUCACHE {
             System.out.print(itr.next() + " "); 
         } 
     } 
-	@SuppressWarnings("static-access")
 	public static void main(String[] args) {
 
 		LRUCACHE ca = new LRUCACHE(4);
