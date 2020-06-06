@@ -23,17 +23,19 @@ public class fibo {
 	}
 
 	private static int fibo(int n,int memo[]) {
-		if(memo[n-1]!=0) {
-			return memo[n-1];
-		}
+	
+		if(n==0)
+			return 0;
 		if(n==1 || n==2) {
 			return 1;
+			
 		}
-		else {
-			int res=fibo(n-1,memo)+fibo(n-2,memo);
-			memo[n-1]=res;
-			return res;
+		else
+		{
+			memo[n-1]=fibo(n-1, memo)+fibo(n-2, memo);
+			
 		}
-
-}
+		return memo[n-1];
+		
+	}
 }
