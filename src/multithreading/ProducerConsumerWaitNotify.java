@@ -1,4 +1,4 @@
-package multi;
+package multithreading;
 
 public class ProducerConsumerWaitNotify {
 

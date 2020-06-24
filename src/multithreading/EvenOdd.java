@@ -1,4 +1,4 @@
-package multi;
+package multithreading;
 public class EvenOdd {
 	private static Object lock = new Object();
 

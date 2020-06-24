@@ -1,4 +1,4 @@
-package multi;
+package multithreading;
 
 import java.util.concurrent.Semaphore;
 import java.util.function.IntConsumer;
