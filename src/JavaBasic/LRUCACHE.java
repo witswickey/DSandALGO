@@ -1,4 +1,4 @@
-package java1;
+package JavaBasic;
 
 import java.util.Deque;
 import java.util.HashMap;

@@ -9,12 +9,13 @@ public class GraphBasic {
 		int V;
 	    LinkedList<Integer> adj[];
 	    
-	    Graph(int v){
+	    @SuppressWarnings("unchecked")
+		Graph(int v){
 	    	
 	    	this.V=v;
 	    	adj=new LinkedList[v];
 	    	for(int i=0;i<v;i++) {
-	    		adj[i]=new LinkedList();
+	    		adj[i]=new LinkedList<Integer>();
 	    	}
 	    }
 
@@ -22,7 +23,7 @@ public class GraphBasic {
     static void addEdge(Graph gap,int src, int dest) {
     	
     	gap.adj[src].add(dest);
-    	gap.adj[dest].add(src);
+    	//gap.adj[dest].add(src);
     }
 
     // A utility function to print the adjacency list  

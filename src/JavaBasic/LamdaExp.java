@@ -1,4 +1,4 @@
-package java1;
+package JavaBasic;
 
 
 public class LamdaExp {

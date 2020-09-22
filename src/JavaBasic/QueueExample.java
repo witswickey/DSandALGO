@@ -1,7 +1,7 @@
 /**
  * 
  */
-package java1;
+package JavaBasic;
 
 /**
  * @author limca

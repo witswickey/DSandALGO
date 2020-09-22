@@ -50,7 +50,6 @@ public class NtheFromLast {
 		System.out.println("Middle ele is" + slow.data);
 	}
 
-	// Function to find middle element a linked list
 	int getNthFromLast(int n) {
 		Node cur = head;
 		int count = 1;
@@ -73,13 +72,13 @@ public class NtheFromLast {
 	}
 
 	public static void main(String[] args) {
-		int arr[] = { 2, 4, 6, 7, 5, 1 };
+		int arr[] = { 1,2,3,4,5 };
 		for (int j : arr) {
 			add(j);
 		}
 		print();
 		//new NtheFromLast().findmiddle();
-		System.out.println("3th from last is ele is" + new NtheFromLast().getNthFromLast(7));
+		System.out.println("3th from last is ele is->" + new NtheFromLast().getNthFromLast(2));
 		// System.out.println("After Sorting");
 	}
 }
