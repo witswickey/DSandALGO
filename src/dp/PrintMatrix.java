@@ -1,6 +1,6 @@
 package dp;
 
- class PrintMatrix {
+ public class PrintMatrix {
 	public static void printMatrix(int[][] m) {
 		try {
 			int rows = m.length;
