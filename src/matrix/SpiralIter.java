@@ -2,8 +2,6 @@ package matrix;
 
 import java.util.LinkedList;
 
-import com.sun.xml.internal.bind.v2.schemagen.xmlschema.List;
-
 public class SpiralIter {
 
 	public static void main(String[] args) {

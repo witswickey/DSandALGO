@@ -6,8 +6,6 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.TreeMap;
 
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils.Collections;
-
 public class TwoCityscheduling {
 
 	static class ds {

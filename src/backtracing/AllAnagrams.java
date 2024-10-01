@@ -3,7 +3,6 @@ package backtracing;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-import com.sun.org.apache.bcel.internal.generic.SWAP;
 
 public class AllAnagrams {
 
