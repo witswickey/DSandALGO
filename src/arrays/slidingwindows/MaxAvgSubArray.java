@@ -1,4 +1,4 @@
-package arrays;
+package arrays.slidingwindows;
 
 import java.util.Arrays;
 

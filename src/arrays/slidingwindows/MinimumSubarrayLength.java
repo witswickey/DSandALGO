@@ -1,4 +1,4 @@
-package arrays;
+package arrays.slidingwindows;
 
 public class MinimumSubarrayLength {
     public int minSubArrayLen(int target, int[] nums) {
